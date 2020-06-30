@@ -1,32 +1,37 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/images/logo.png" />
-    <HelloWorld msg="Welcome to the Vuejs Template - by @DanielSilvado" />
-  </div>
+  <v-content>
+    <Header />
+  </v-content>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import Header from "./components/Header";
 
 export default {
   name: "App",
   components: {
-    HelloWorld
-  }
+    Header
+  },
+
+  data: () => ({
+    //state
+  })
 };
 </script>
 
 <style>
-#app {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  height: 100vh;
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+@import "./styles/Base.scss";
+@import "./styles/Reset.scss";
+
+@media screen and (max-width: 1024px) {
+  body {
+    background: red;
+  }
+}
+
+@media screen and (max-width: 812px) {
+  body {
+    background: red;
+  }
 }
 </style>
