@@ -1,24 +1,12 @@
-# vue-template
+### Project setup
 
-## Project setup
-```
-yarn install
-```
-
-### Compiles and hot-reloads for development
-```
+```sh
+# Install Deps
 yarn serve
-```
 
-### Compiles and minifies for production
-```
-yarn build
-```
+# Compiles and hot-reloads for development
+yarn run serve
 
-### Lints and fixes files
+# Compiles and minifies for production
+yarn run build
 ```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
