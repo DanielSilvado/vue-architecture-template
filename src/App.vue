@@ -1,31 +1,52 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/images/logo.png" />
-    <HelloWorld msg="Welcome to the Vuejs Template - by @DanielSilvado" />
+  <div id="hello">
+    <div class="wrapper">
+      <div class="typing">Welcome to the Vuejs Template 😉</div>
+    </div>
   </div>
 </template>
-
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
 export default {
-  name: "App",
-  components: {
-    HelloWorld
-  }
+  name: "Hello"
 };
 </script>
 
-<style>
-#app {
+<style lang="scss">
+#hello {
+
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 100vh;
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+  width: 100%;
+
+  .wrapper {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .typing {
+    width: 30ch;
+    animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-size: 1.6em;
+  }
+
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+  }
+
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
 }
 </style>
