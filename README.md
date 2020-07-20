@@ -12,6 +12,5 @@ yarn install
 yanr serve
 
 # Compiles and minifies for production
-yarn
-build
+yarn build
 ```
