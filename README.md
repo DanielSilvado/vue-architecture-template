@@ -2,7 +2,7 @@
 
 ***Este documento está no estado "trabalho em andamento" e pode ser modificado conforme necessário.***
 
-### Project setup
+### Projeto setup
 
 ```sh
 # Install Deps
