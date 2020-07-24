@@ -1,7 +1,7 @@
 <template>
   <div id="hello">
     <div class="wrapper">
-      <div class="typing">Welcome to the Vuejs Template 😉</div>
+      <div class="typing">Welcome to the Vue.js Template 😉</div>
     </div>
   </div>
 </template>
